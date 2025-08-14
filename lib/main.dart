@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Login_page.dart';
 import 'list_view.dart';
+import 'Grid_view.dart';
 void main()=> runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Navigation',
-      home: LoginPage(),
+      home: GridV(),
     );
   }
 }

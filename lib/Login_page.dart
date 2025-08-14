@@ -93,7 +93,7 @@ class _LoginPageState extends State<LoginPage> {
                       //   ScaffoldMessenger.of(context).showSnackBar(
                       //     SnackBar(content: Text('Login Successful')),
                       //   );
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>ListV()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>ListV(name: phoneController.text,)));
                       }
                   },style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.green),

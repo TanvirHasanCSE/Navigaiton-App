@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'main.dart';
 import 'Login_page.dart';
 class ListV extends StatefulWidget {
-  const ListV({super.key});
+  final name;
+  const ListV({super.key,required this.name});
 
   @override
   State<ListV> createState() => _ListVState();
@@ -24,7 +25,7 @@ class _ListVState extends State<ListV> {
                 leading: Icon(Icons.phone),
                 trailing: Icon(Icons.delete_forever,color: Colors.red,),
                 title: Text("Tanvir"),
-                subtitle: Text('017xxxxxxx'),
+                subtitle: Text(widget.name),
               ),
             );
           },
